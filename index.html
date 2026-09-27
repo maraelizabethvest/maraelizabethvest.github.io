@@ -3,128 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mara-Elizabeth Vest | Official Author Website</title>
+    <title>Mara-Elizabeth Vest | Official Author & Creator Website</title>
     <style>
         :root {
             --bg-color: #0b0c10;
-            --text-color: #c5c6c7;
-            --accent-color: #66fcf1;
             --card-bg: #1f2833;
+            --text-main: #c5a880;
+            --text-light: #ffffff;
+            --accent: #8b0000;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Georgia', serif;
             background-color: var(--bg-color);
-            color: var(--text-color);
+            color: var(--text-light);
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover;
-            background-position: center;
             text-align: center;
-            padding: 100px 20px;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #000000, var(--bg-color));
         }
-        header h1 {
-            color: #fff;
-            margin: 0;
-            font-size: 3rem;
+        h1 {
+            font-size: 2.8rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
             letter-spacing: 2px;
         }
-        header p {
-            color: var(--accent-color);
+        .subtitle {
             font-size: 1.2rem;
+            font-style: italic;
+            color: #888;
         }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px;
         }
-        section {
-            margin-bottom: 60px;
+        .about-section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--text-main);
         }
         h2 {
-            color: #fff;
-            border-bottom: 2px solid var(--accent-color);
+            color: var(--text-main);
+            border-bottom: 1px solid #333;
             padding-bottom: 10px;
         }
-        .bio-box {
-            background-color: var(--card-bg);
-            padding: 25px;
-            border-radius: 8px;
-            border-left: 5px solid var(--accent-color);
-        }
-        .books-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
+            margin-top: 20px;
         }
-        .book-card {
+        .card {
             background-color: var(--card-bg);
-            border-radius: 8px;
             padding: 20px;
+            border-radius: 8px;
             transition: transform 0.3s;
+            border: 1px solid #333;
         }
-        .book-card:hover {
+        .card:hover {
             transform: translateY(-5px);
+            border-color: var(--text-main);
         }
-        .book-card h3 {
-            color: #fff;
+        .card h3 {
             margin-top: 0;
+            color: var(--text-main);
         }
         .btn {
             display: inline-block;
-            background-color: var(--accent-color);
-            color: #000;
+            background-color: var(--accent);
+            color: white;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 4px;
             font-weight: bold;
             margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #b30000;
         }
         footer {
             text-align: center;
-            padding: 40px;
-            background-color: #050608;
+            padding: 40px 20px;
+            color: #555;
             font-size: 0.9rem;
-        }
-        footer a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 10px;
         }
     </style>
 
-    <!-- 🚀 GOOGLE STRUCTURED DATA (SCHEMA.ORG) FOR SEO -->
+    <!-- Тот самый скрытый SEO-код для Google (Ваша дата рождения) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Mara-Elizabeth Vest",
-      "alternateName": "Мара-Элизабет Вест",
-      "birthDate": "1995-05-15", 
-      "description": "Author of psychological thrillers and dark pop music creator.",
-      "jobTitle": "Author & Sound Creator",
-      "url": "https://maraelizabethvest.com",
+      "birthDate": "2001-10-18",
+      "jobTitle": "Author & Music Creator",
+      "description": "Contemporary author specializing in psychological thrillers, dark suspense, and cinematic pop.",
       "sameAs": [
-        "https://www.litres.ru/author/mara-elizabeth-vest-34039953/",
-        "https://suno.com/@maraelizabethvest",
-        "https://mybook.ru/author/mara-elizabeth-vest/"
-      ],
-      "publishingPrinciples": [
-        {
-          "@type": "Book",
-          "name": "The Night He Came Back"
-        },
-        {
-          "@type": "Book",
-          "name": "The Fourth Mara"
-        },
-        {
-          "@type": "Book",
-          "name": "The House Without Windows"
-        }
+        "https://litres.ru",
+        "https://suno.com"
       ]
     }
     </script>
@@ -133,54 +116,54 @@
 
     <header>
         <h1>Mara-Elizabeth Vest</h1>
-        <p>Author & Cinematic Dark Pop Creator</p>
+        <div class="subtitle">Official Author & Music Creator Website</div>
     </header>
 
     <div class="container">
-        <section id="about">
-            <h2>About the Author / О себе</h2>
-            <div class="bio-box">
-                <p><strong>Mara-Elizabeth Vest</strong> (born May 15, 1995) is a contemporary author and music creator specializing in psychological thrillers, dark suspense, and cinematic pop. She is best known for her gripping book trilogy, which blends dark sci-fi elements, deep secrets, and human psychology.</p>
-                <p><em>Мара-Элизабет Вест (родилась 15 мая 1995 года) — современная писательница и музыкальный автор, работающая на стыке психологического триллера и мрачного саспенса. Создает концептуальный dark pop саундтрек к своим книгам.</em></p>
+        <section class="about-section">
+            <h2>About the Author / О Креаторе</h2>
+            <p><strong>Mara-Elizabeth Vest</strong> is a contemporary author and music creator specializing in psychological thrillers, dark suspense, and cinematic pop. Her literary work blends dark sci-fi elements, secrets, and human psychology. In addition to her writing, she creates atmospheric, narrative-driven dark pop music that complements the cinematic universes of her novels.</p>
+            <p><em>Пишу мрачные психологические триллеры на английском и создаю концептуальный dark pop саундтрек к своим книгам. Добро пожаловать в мою вселенную!</em></p>
+        </section>
+
+        <section>
+            <h2>My Books / Мои Книги</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>The Night He Came Back</h3>
+                    <p>Book 1 of the Trilogy. A gripping psychological thriller about memory loss, clones, and dangerous organizations.</p>
+                    <a href="https://litres.ru" class="btn">Read on LitRes</a>
+                </div>
+                <div class="card">
+                    <h3>The Fourth Mara</h3>
+                    <p>Book 2 of the Trilogy. The chase continues as identity theft and the dark truth about the Original Mara unfold.</p>
+                    <a href="https://litres.ru" class="btn">Read on LitRes</a>
+                </div>
+                <div class="card">
+                    <h3>The House Without Windows</h3>
+                    <p>Book 3 of the Trilogy. The final confrontation where all past secrets are locked behind a dark childhood memory.</p>
+                    <a href="https://litres.ru" class="btn">Read on LitRes</a>
+                </div>
+                <div class="card">
+                    <h3>The Girl and the Last Dragon</h3>
+                    <p>New exciting project. A fresh dive into mysterious worlds and high-stakes dark fantasy suspense.</p>
+                    <a href="https://litres.ru" class="btn">Coming Soon</a>
+                </div>
             </div>
         </section>
 
-        <section id="books">
-            <h2>The Psychological Thriller Trilogy</h2>
-            <div class="books-grid">
-                <div class="book-card">
-                    <h3>Book 1: The Night He Came Back</h3>
-                    <p>A gripping story of Mara, who wakes up with amnesia next to a dead body, only to realize she is the 'Third' version of herself.</p>
-                    <a href="https://www.litres.ru/author/mara-elizabeth-vest-34039953/" class="btn" target="_blank">Read on LitRes</a>
-                </div>
-                <div class="book-card">
-                    <h3>Book 2: The Fourth Mara</h3>
-                    <p>The stakes rise as a shadow 'Fourth' clone steals Mara's identity, while the 'Original' Mara returns to reclaim her child.</p>
-                    <a href="https://www.litres.ru/author/mara-elizabeth-vest-34039953/" class="btn" target="_blank">Read on LitRes</a>
-                </div>
-                <div class="book-card">
-                    <h3>Book 3: The House Without Windows</h3>
-                    <p>The thrilling conclusion. All secrets lead back to the darkest place of her childhood memories — the house without windows.</p>
-                    <a href="https://www.litres.ru/author/mara-elizabeth-vest-34039953/" class="btn" target="_blank">Read on LitRes</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="music">
-            <h2>Atmospheric Music Project</h2>
-            <div class="bio-box">
-                <p>Listen to the narrative-driven dark pop soundtracks created to accompany the cinematic universe of the novels.</p>
-                <a href="https://suno.com/@maraelizabethvest" class="btn" target="_blank" style="background-color: #fff; color: #000;">Listen on Suno</a>
+        <section style="margin-top: 40px;">
+            <h2>My Music / Моя Музыка</h2>
+            <div class="about-section" style="border-left-color: var(--accent);">
+                <h3>Cinematic Dark Pop on Suno</h3>
+                <p>Listen to the official conceptual soundtracks that breathe life into the worlds of my psychological thrillers.</p>
+                <a href="https://suno.com" class="btn" style="background-color: #555;">Listen on Suno</a>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2026 Mara-Elizabeth Vest. All Rights Reserved.</p>
-        <p>
-            <a href="https://www.litres.ru/author/mara-elizabeth-vest-34039953/" target="_blank">LitRes</a> | 
-            <a href="https://suno.com/@maraelizabethvest" target="_blank">Suno</a>
-        </p>
+        <p>&copy; 2026 Mara-Elizabeth Vest. All rights reserved.</p>
     </footer>
 
 </body>
